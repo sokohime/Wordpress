@@ -1,0 +1,131 @@
+screen-Size = (mini 400) (small 1024) (average 1296) (large 1936) (jumbo 2704) (huge 3600)
+browser-Vendors = -moz- -webkit- -o- -ms-
+black = rgb(40,40,40)
+grey = rgb(135,135,135)
+
+-min-height(value)
+	-style(value, min-height)
+
+-get(value, parameter, property = null)
+	if parameter is exst
+		if value not null
+			return true
+	if parameter is type
+		return typeof(value)
+	if parameter is calc
+		return value
+	if parameter is sqrt
+		return math(value, 'sqrt')
+	
+-style(value, parameter, property = null)
+	if -get(property, exst)
+		{parameter}-{property}: value
+	else
+		{parameter}: value
+
+-query(value, property = null, parameter = null)
+	if -get(parameter, exst)
+		if -get(property, exst)
+			@media parameter and ({property}: value)
+				{block}
+		else
+			@media screen and ({property}: value)
+				{block}
+	else
+		@media screen and (min-width: value)
+			{block}
+
+$row
+	:before,:after
+		content ""
+		clear both
+		display table
+$defaults
+	-min-height(10px)
+	-style(0 auto, margin)
+$viewport
+	-style(100%, width)
+	-style(100%, height)
+	-style(0, margin)
+	
+body
+	margin 0
+	-style(grey, background, color)
+
+.viewport
+	@extends $viewport
+	for item in (0..-1+length(screen-Size))
+		+-query(values(screen-Size)[item] px)
+			.header
+				@extends $row
+				-style(100%, width)
+				-style(white, background, color)
+				.title-bg
+					-style(grey, background, color)
+				.content
+					@extends $defaults
+					-min-height(160px)
+					-style((values(screen-Size)[item]/2) + (values(screen-Size)[item]*0.2) px, width)
+					.title-container
+						-style(relative, position)
+						-style(570px, width)
+						-style(60px, height)
+						-style(black, background, color)
+						-style(35px auto 35px, margin)
+						-style(50px, padding)
+						.title-top
+							-style(center, text-align)
+							-style(uppercase, text-transform)
+							-style(200%, font-size)
+							-style(white, color)
+						.title-sub
+							-style(150%, font-size)
+							-style(center, text-align)
+							-style(grey, color)
+			.navbar
+				@extends $row
+				-style(100%, width)
+				-style(black, background, color)
+				.content
+					@extends $defaults
+					-min-height(60px)
+					-style(grey, color)
+					-style((values(screen-Size)[item]/2) + (values(screen-Size)[item]*0.2) px, width)
+					.left
+						-style(left, float)
+					.right
+						-style(right, float)
+			.notice
+				@extends $row
+				-style(100%, width)
+				.content
+					-style((values(screen-Size)[item]/2) + (values(screen-Size)[item]*0.2) px, width)
+			.filler
+				@extends $row
+				-style(100%, width)
+				-style(white, background, color)
+				.content
+					@extends $defaults
+					-style((values(screen-Size)[item]/2) + (values(screen-Size)[item]*0.2) px, width)
+					.title
+						-style(175%, font-size)
+						-style(center, text-align)
+						-style(lowercase, text-transform)
+					img
+						-style(100%, width)
+						-style(auto, height)
+					.text
+						-style(0% 10% 0% 10%, padding)
+						-style(88%, font-size)
+					.sound
+						.mejs
+							-min-height(1px)
+			.footer
+				@extends $row
+				-style(100%, width)
+				.content
+					-style((values(screen-Size)[item]/2) + (values(screen-Size)[item]*0.2) px, width)
+					.left
+						-style(left, float)
+					.right
+						-style(right, float)

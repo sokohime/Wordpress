@@ -1,0 +1,557 @@
+.viewport .header :before,
+.viewport .navbar :before,
+.viewport .notice :before,
+.viewport .filler :before,
+.viewport .footer :before,
+.viewport .header :after,
+.viewport .navbar :after,
+.viewport .notice :after,
+.viewport .filler :after,
+.viewport .footer :after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.viewport .header .content,
+.viewport .navbar .content,
+.viewport .filler .content {
+  min-height: 10px;
+  margin: 0 auto;
+}
+.viewport {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+body {
+  margin: 0;
+  background-color: #878787;
+}
+@media screen and (min-width: 400px) {
+  .viewport .header {
+    width: 100%;
+    background-color: #fff;
+  }
+  .viewport .header .title-bg {
+    background-color: #878787;
+  }
+  .viewport .header .content {
+    min-height: 160px;
+    width: 280px;
+  }
+  .viewport .header .content .title-container {
+    position: relative;
+    width: 570px;
+    height: 60px;
+    background-color: #282828;
+    margin: 35px auto 35px;
+    padding: 50px;
+  }
+  .viewport .header .content .title-container .title-top {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 200%;
+    color: #fff;
+  }
+  .viewport .header .content .title-container .title-sub {
+    font-size: 150%;
+    text-align: center;
+    color: #878787;
+  }
+  .viewport .navbar {
+    width: 100%;
+    background-color: #282828;
+  }
+  .viewport .navbar .content {
+    min-height: 60px;
+    color: #878787;
+    width: 280px;
+  }
+  .viewport .navbar .content .left {
+    float: left;
+  }
+  .viewport .navbar .content .right {
+    float: right;
+  }
+  .viewport .notice {
+    width: 100%;
+  }
+  .viewport .notice .content {
+    width: 280px;
+  }
+  .viewport .filler {
+    width: 100%;
+    background-color: #fff;
+  }
+  .viewport .filler .content {
+    width: 280px;
+  }
+  .viewport .filler .content .title {
+    font-size: 175%;
+    text-align: center;
+    text-transform: lowercase;
+  }
+  .viewport .filler .content img {
+    width: 100%;
+    height: auto;
+  }
+  .viewport .filler .content .text {
+    padding: 0% 10% 0% 10%;
+    font-size: 88%;
+  }
+  .viewport .filler .content .sound .mejs {
+    min-height: 1px;
+  }
+  .viewport .footer {
+    width: 100%;
+  }
+  .viewport .footer .content {
+    width: 280px;
+  }
+  .viewport .footer .content .left {
+    float: left;
+  }
+  .viewport .footer .content .right {
+    float: right;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .viewport .header {
+    width: 100%;
+    background-color: #fff;
+  }
+  .viewport .header .title-bg {
+    background-color: #878787;
+  }
+  .viewport .header .content {
+    min-height: 160px;
+    width: 716.8px;
+  }
+  .viewport .header .content .title-container {
+    position: relative;
+    width: 570px;
+    height: 60px;
+    background-color: #282828;
+    margin: 35px auto 35px;
+    padding: 50px;
+  }
+  .viewport .header .content .title-container .title-top {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 200%;
+    color: #fff;
+  }
+  .viewport .header .content .title-container .title-sub {
+    font-size: 150%;
+    text-align: center;
+    color: #878787;
+  }
+  .viewport .navbar {
+    width: 100%;
+    background-color: #282828;
+  }
+  .viewport .navbar .content {
+    min-height: 60px;
+    color: #878787;
+    width: 716.8px;
+  }
+  .viewport .navbar .content .left {
+    float: left;
+  }
+  .viewport .navbar .content .right {
+    float: right;
+  }
+  .viewport .notice {
+    width: 100%;
+  }
+  .viewport .notice .content {
+    width: 716.8px;
+  }
+  .viewport .filler {
+    width: 100%;
+    background-color: #fff;
+  }
+  .viewport .filler .content {
+    width: 716.8px;
+  }
+  .viewport .filler .content .title {
+    font-size: 175%;
+    text-align: center;
+    text-transform: lowercase;
+  }
+  .viewport .filler .content img {
+    width: 100%;
+    height: auto;
+  }
+  .viewport .filler .content .text {
+    padding: 0% 10% 0% 10%;
+    font-size: 88%;
+  }
+  .viewport .filler .content .sound .mejs {
+    min-height: 1px;
+  }
+  .viewport .footer {
+    width: 100%;
+  }
+  .viewport .footer .content {
+    width: 716.8px;
+  }
+  .viewport .footer .content .left {
+    float: left;
+  }
+  .viewport .footer .content .right {
+    float: right;
+  }
+}
+@media screen and (min-width: 1296px) {
+  .viewport .header {
+    width: 100%;
+    background-color: #fff;
+  }
+  .viewport .header .title-bg {
+    background-color: #878787;
+  }
+  .viewport .header .content {
+    min-height: 160px;
+    width: 907.2px;
+  }
+  .viewport .header .content .title-container {
+    position: relative;
+    width: 570px;
+    height: 60px;
+    background-color: #282828;
+    margin: 35px auto 35px;
+    padding: 50px;
+  }
+  .viewport .header .content .title-container .title-top {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 200%;
+    color: #fff;
+  }
+  .viewport .header .content .title-container .title-sub {
+    font-size: 150%;
+    text-align: center;
+    color: #878787;
+  }
+  .viewport .navbar {
+    width: 100%;
+    background-color: #282828;
+  }
+  .viewport .navbar .content {
+    min-height: 60px;
+    color: #878787;
+    width: 907.2px;
+  }
+  .viewport .navbar .content .left {
+    float: left;
+  }
+  .viewport .navbar .content .right {
+    float: right;
+  }
+  .viewport .notice {
+    width: 100%;
+  }
+  .viewport .notice .content {
+    width: 907.2px;
+  }
+  .viewport .filler {
+    width: 100%;
+    background-color: #fff;
+  }
+  .viewport .filler .content {
+    width: 907.2px;
+  }
+  .viewport .filler .content .title {
+    font-size: 175%;
+    text-align: center;
+    text-transform: lowercase;
+  }
+  .viewport .filler .content img {
+    width: 100%;
+    height: auto;
+  }
+  .viewport .filler .content .text {
+    padding: 0% 10% 0% 10%;
+    font-size: 88%;
+  }
+  .viewport .filler .content .sound .mejs {
+    min-height: 1px;
+  }
+  .viewport .footer {
+    width: 100%;
+  }
+  .viewport .footer .content {
+    width: 907.2px;
+  }
+  .viewport .footer .content .left {
+    float: left;
+  }
+  .viewport .footer .content .right {
+    float: right;
+  }
+}
+@media screen and (min-width: 1936px) {
+  .viewport .header {
+    width: 100%;
+    background-color: #fff;
+  }
+  .viewport .header .title-bg {
+    background-color: #878787;
+  }
+  .viewport .header .content {
+    min-height: 160px;
+    width: 1355.2px;
+  }
+  .viewport .header .content .title-container {
+    position: relative;
+    width: 570px;
+    height: 60px;
+    background-color: #282828;
+    margin: 35px auto 35px;
+    padding: 50px;
+  }
+  .viewport .header .content .title-container .title-top {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 200%;
+    color: #fff;
+  }
+  .viewport .header .content .title-container .title-sub {
+    font-size: 150%;
+    text-align: center;
+    color: #878787;
+  }
+  .viewport .navbar {
+    width: 100%;
+    background-color: #282828;
+  }
+  .viewport .navbar .content {
+    min-height: 60px;
+    color: #878787;
+    width: 1355.2px;
+  }
+  .viewport .navbar .content .left {
+    float: left;
+  }
+  .viewport .navbar .content .right {
+    float: right;
+  }
+  .viewport .notice {
+    width: 100%;
+  }
+  .viewport .notice .content {
+    width: 1355.2px;
+  }
+  .viewport .filler {
+    width: 100%;
+    background-color: #fff;
+  }
+  .viewport .filler .content {
+    width: 1355.2px;
+  }
+  .viewport .filler .content .title {
+    font-size: 175%;
+    text-align: center;
+    text-transform: lowercase;
+  }
+  .viewport .filler .content img {
+    width: 100%;
+    height: auto;
+  }
+  .viewport .filler .content .text {
+    padding: 0% 10% 0% 10%;
+    font-size: 88%;
+  }
+  .viewport .filler .content .sound .mejs {
+    min-height: 1px;
+  }
+  .viewport .footer {
+    width: 100%;
+  }
+  .viewport .footer .content {
+    width: 1355.2px;
+  }
+  .viewport .footer .content .left {
+    float: left;
+  }
+  .viewport .footer .content .right {
+    float: right;
+  }
+}
+@media screen and (min-width: 2704px) {
+  .viewport .header {
+    width: 100%;
+    background-color: #fff;
+  }
+  .viewport .header .title-bg {
+    background-color: #878787;
+  }
+  .viewport .header .content {
+    min-height: 160px;
+    width: 1892.8000000000002px;
+  }
+  .viewport .header .content .title-container {
+    position: relative;
+    width: 570px;
+    height: 60px;
+    background-color: #282828;
+    margin: 35px auto 35px;
+    padding: 50px;
+  }
+  .viewport .header .content .title-container .title-top {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 200%;
+    color: #fff;
+  }
+  .viewport .header .content .title-container .title-sub {
+    font-size: 150%;
+    text-align: center;
+    color: #878787;
+  }
+  .viewport .navbar {
+    width: 100%;
+    background-color: #282828;
+  }
+  .viewport .navbar .content {
+    min-height: 60px;
+    color: #878787;
+    width: 1892.8000000000002px;
+  }
+  .viewport .navbar .content .left {
+    float: left;
+  }
+  .viewport .navbar .content .right {
+    float: right;
+  }
+  .viewport .notice {
+    width: 100%;
+  }
+  .viewport .notice .content {
+    width: 1892.8000000000002px;
+  }
+  .viewport .filler {
+    width: 100%;
+    background-color: #fff;
+  }
+  .viewport .filler .content {
+    width: 1892.8000000000002px;
+  }
+  .viewport .filler .content .title {
+    font-size: 175%;
+    text-align: center;
+    text-transform: lowercase;
+  }
+  .viewport .filler .content img {
+    width: 100%;
+    height: auto;
+  }
+  .viewport .filler .content .text {
+    padding: 0% 10% 0% 10%;
+    font-size: 88%;
+  }
+  .viewport .filler .content .sound .mejs {
+    min-height: 1px;
+  }
+  .viewport .footer {
+    width: 100%;
+  }
+  .viewport .footer .content {
+    width: 1892.8000000000002px;
+  }
+  .viewport .footer .content .left {
+    float: left;
+  }
+  .viewport .footer .content .right {
+    float: right;
+  }
+}
+@media screen and (min-width: 3600px) {
+  .viewport .header {
+    width: 100%;
+    background-color: #fff;
+  }
+  .viewport .header .title-bg {
+    background-color: #878787;
+  }
+  .viewport .header .content {
+    min-height: 160px;
+    width: 2520px;
+  }
+  .viewport .header .content .title-container {
+    position: relative;
+    width: 570px;
+    height: 60px;
+    background-color: #282828;
+    margin: 35px auto 35px;
+    padding: 50px;
+  }
+  .viewport .header .content .title-container .title-top {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 200%;
+    color: #fff;
+  }
+  .viewport .header .content .title-container .title-sub {
+    font-size: 150%;
+    text-align: center;
+    color: #878787;
+  }
+  .viewport .navbar {
+    width: 100%;
+    background-color: #282828;
+  }
+  .viewport .navbar .content {
+    min-height: 60px;
+    color: #878787;
+    width: 2520px;
+  }
+  .viewport .navbar .content .left {
+    float: left;
+  }
+  .viewport .navbar .content .right {
+    float: right;
+  }
+  .viewport .notice {
+    width: 100%;
+  }
+  .viewport .notice .content {
+    width: 2520px;
+  }
+  .viewport .filler {
+    width: 100%;
+    background-color: #fff;
+  }
+  .viewport .filler .content {
+    width: 2520px;
+  }
+  .viewport .filler .content .title {
+    font-size: 175%;
+    text-align: center;
+    text-transform: lowercase;
+  }
+  .viewport .filler .content img {
+    width: 100%;
+    height: auto;
+  }
+  .viewport .filler .content .text {
+    padding: 0% 10% 0% 10%;
+    font-size: 88%;
+  }
+  .viewport .filler .content .sound .mejs {
+    min-height: 1px;
+  }
+  .viewport .footer {
+    width: 100%;
+  }
+  .viewport .footer .content {
+    width: 2520px;
+  }
+  .viewport .footer .content .left {
+    float: left;
+  }
+  .viewport .footer .content .right {
+    float: right;
+  }
+}
